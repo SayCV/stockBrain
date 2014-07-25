@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/TrevorDev/go-finance"
+	"./../lib/finance"
 	"log"
 	"time"
 	"./../lib/database"
