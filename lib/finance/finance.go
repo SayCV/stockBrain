@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	//"log"
 	"strings"
-	"errors"
+	//"errors"
 )
 
 //List of constants that may be supported by yahoo finance api
