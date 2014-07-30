@@ -17,8 +17,8 @@ func InitDatabase(){
 		log.Fatal(err)
 	}
 	//THIS IS SOO BROKE ADDING THIS CAUSES DEADLOCK I SWEAR ITS A GOLANG BUG
-	DB.SetMaxIdleConns(9)
-	DB.SetMaxOpenConns(9)
+	//DB.SetMaxIdleConns(9)
+	//DB.SetMaxOpenConns(9)
 }
 
 func GetDatabase()*sql.DB{
