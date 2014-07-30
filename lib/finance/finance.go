@@ -316,9 +316,9 @@ func GetStockInfoWithTimeOut(symbols []string, attributes []string, timeout time
 	if err != nil { return ret, err }
 
 	symbolRows := strings.Split(string(contents), "\n")
-	if(len(symbolRows)-1!=len(symbols)){
-		return ret, errors.New("stock: Api request returned invalid number of symbols. Got "+ string(len(symbolRows))+" returned")
-	}
+	//if(len(symbolRows)-1!=len(symbols)){
+	//	return ret, errors.New("stock: Api request returned invalid number of symbols. Got "+ string(len(symbolRows))+" returned")
+	//}
 
 	for i:=0;i<len(symbols);i++ {
 		ret[symbols[i]] = make(map[string] string)

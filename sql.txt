@@ -4,7 +4,14 @@ CREATE TABLE stock_snapshot
   stock_name text NOT NULL,
   last_trade_price double precision NOT NULL,
   price_per_earning double precision NOT NULL,
-  time_stamp timestamp without time zone NOT NULL DEFAULT now(),
+  time_stamp timestamp NOT NULL DEFAULT now(),
   recommend_buy boolean NOT NULL DEFAULT false,
-  CONSTRAINT "stock_snapshot_pkey" PRIMARY KEY (id)
-)
+  CONSTRAINT stock_snapshot_pkey PRIMARY KEY (id)
+);
+
+bin\mysql -u root -p
+CREATE DATABASE stockbrain;
+USE stockbrain;
+DROP DATABASE stockbrain;
+DROP TABLE stockbrain.stock_snapshot;
+ALTER TABLE stock_snapshot DISCARD TABLESPACE;

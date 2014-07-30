@@ -3,5 +3,5 @@ package config
 const (
 	ServiceName =	""
 	Port        =	""
-	DatabaseUrl =	""
+	DatabaseUrl =	"root:@/stockbrain"
 )
